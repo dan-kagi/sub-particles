@@ -204,7 +204,7 @@ const questions = [
         neutron: 20,
         eletron: 18,
         massNumber: 40,
-        charge: '-2',
+        charge: '+2',
       },
       {
         atom: 'Fe',

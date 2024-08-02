@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+  background-color: green;
+  margin: 0px;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+header > img {
+  width: 100px;
+}
+
+input {
+  width: 50px;
+}
+
+p {
+  margin: 0px;
+}
+
+.card {
+  margin: 5px;
+  width: 30%;
+  padding: 5px;
+  color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  padding: 5px;
+  color: greenyellow;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+th {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(255, 192, 221);
+  color: black;
+  border: 2px solid rgb(255, 192, 221);
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 768px) and (max-width: 920px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    width: 98%;
+    font-size: 0.8rem;
+  }
+}

@@ -289,12 +289,19 @@ function createCard(question) {
       const check = checkResult(inputs[h].value, question.answer[h]);
       if (!check) {
         pEmoji.innerHTML = messages[1].emoji + messages[1].msg;
-        pEmoji.style.backgroundColor = 'red';
+        if (pEmoji.className === 'pEmojiCorrect') {
+          pEmoji.classList.remove('pEmogiCorrect');
+        }
+        pEmoji.setAttribute('class', 'pEmojiError');
         return;
       }
     }
+    if (pEmoji.className === 'pEmojiError') {
+      pEmoji.classList.remove('pEmogiError');
+    }
+    pEmoji.setAttribute('class', 'pEmojiError');
     pEmoji.innerHTML = messages[0].emoji + messages[0].msg;
-    pEmoji.style.backgroundColor = 'blue';
+    pEmoji.setAttribute('class', 'pEmojiCorrect');
   });
   card.appendChild(button);
   return card;

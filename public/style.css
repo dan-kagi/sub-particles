@@ -24,6 +24,13 @@ header {
   background-color: white;
 }
 
+.pEmojiError {
+  background-color: red;
+}
+.pEmojiCorrect {
+  background-color: blue;
+}
+
 header > img {
   width: 100px;
 }

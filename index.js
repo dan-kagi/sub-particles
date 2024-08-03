@@ -289,10 +289,12 @@ function createCard(question) {
       const check = checkResult(inputs[h].value, question.answer[h]);
       if (!check) {
         pEmoji.innerHTML = messages[1].emoji + messages[1].msg;
+        pEmoji.style.backgroundColor = 'red';
         return;
       }
     }
     pEmoji.innerHTML = messages[0].emoji + messages[0].msg;
+    pEmoji.style.backgroundColor = 'blue';
   });
   card.appendChild(button);
   return card;

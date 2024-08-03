@@ -287,7 +287,6 @@ function createCard(question) {
     const inputs = card.querySelectorAll('input');
     for (let h = 0; h < inputs.length; h++) {
       const check = checkResult(inputs[h].value, question.answer[h]);
-      console.log(check);
       if (!check) {
         pEmoji.innerHTML = messages[1].emoji + messages[1].msg;
         return;
@@ -300,8 +299,7 @@ function createCard(question) {
 }
 
 function checkResult(input, stored) {
-  console.log(`${input} ? ${stored}`);
-  if (Number(input) === stored) {
+  if (Number(input.strip()) === stored) {
     return true;
   } else {
     return false;

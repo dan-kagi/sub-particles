@@ -299,7 +299,7 @@ function createCard(question) {
 }
 
 function checkResult(input, stored) {
-  if (Number(input.strip()) === stored) {
+  if (Number(input.trim()) === stored) {
     return true;
   } else {
     return false;

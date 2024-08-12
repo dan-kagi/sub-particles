@@ -4,18 +4,6 @@ body {
   margin: 0px;
 }
 
-#scattering {
-  display: block;
-  text-align: center;
-  color: white;
-  margin-bottom: 20px;
-}
-
-#scattering:hover {
-  color: orange;
-  font-weight: bold;
-}
-
 main {
   width: 100%;
   margin: auto;
